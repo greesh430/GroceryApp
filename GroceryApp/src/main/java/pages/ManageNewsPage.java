@@ -45,9 +45,9 @@ public class ManageNewsPage {
 	{
 		managenewsnewbutton.click();
 	}
-	public void manageNewsAddText(String text)
+	public void manageNewsAddText()
 	{
-		managenewsaddtext.sendKeys(text);
+		managenewsaddtext.sendKeys("hello");
 	}
 	public void manageNewsSave()
 	{

@@ -24,11 +24,10 @@ public void verifyUserIsAbleToClickManageNewsAndEnterText() throws IOException
 	loginpage.enterThePassword(password);		
 	loginpage.signinButtonClick();
 	
-	ManageNewsPage managenewspage=new ManageNewsPage(driver);
-	String text=ExcelUtility.readStringData(0, 0,"ManageNews");
+	ManageNewsPage managenewspage=new ManageNewsPage(driver);	
 	managenewspage.manageNewsMoreInfo();
 	managenewspage.manageNewsNewButton();
-	managenewspage.manageNewsAddText(text);
+	managenewspage.manageNewsAddText();
 	managenewspage.manageNewsSave();
 	managenewspage.isAlertDisplayed();
 	
